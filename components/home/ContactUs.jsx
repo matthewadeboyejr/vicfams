@@ -1,8 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { FaCalendarAlt, FaPhoneAlt } from "react-icons/fa";
-import { RiGlobalLine } from "react-icons/ri";
 import { useState, useRef } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
@@ -79,12 +77,7 @@ const ContactUs = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Intro Section */}
-          <motion.div
-            variants={fadeInUp}
-            initial="initial"
-            animate="animate"
-            className="space-y-8"
-          >
+          <div className="space-y-8">
             <div>
               <p className="text-sm uppercase text-blue-500 font-semibold tracking-wide">
                 Let's Help You
@@ -115,15 +108,10 @@ const ContactUs = () => {
                 </p>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Form */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className=" p-4  bg-gray-50"
-          >
+          <div className=" p-4  bg-gray-50">
             <form
               ref={formRef}
               onSubmit={handleSubmit}
@@ -271,7 +259,7 @@ const ContactUs = () => {
                 {isSubmitting ? "Submitting..." : "Get Quote"}
               </button>
             </form>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
@@ -279,8 +267,3 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
-
-export const fadeInUp = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-};

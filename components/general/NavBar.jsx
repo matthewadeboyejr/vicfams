@@ -94,7 +94,6 @@ const NavBar = () => {
           </ul>
         </div>
       </div>
-
       {/* Main Navigation Bar */}
       <nav className="bg-white shadow-sm py-4 px-5 rounded-b-4xl hidden md:flex justify-between items-center mx-10">
         <ul className="flex gap-6">
@@ -111,12 +110,11 @@ const NavBar = () => {
         </ul>
         <GetQuote />
       </nav>
-
       {/* Mobile NavBar */}
       <div className="md:hidden flex items-center justify-between p-4 bg-white shadow-2xl  rounded-b-4xl">
-        <Link href="/" className="w-24">
+        <Link href="/" className="w-28">
           <Image
-            src="/logo.png"
+            src="/logomobile.png"
             alt="Vicfams Logo"
             width={100}
             height={100}
@@ -132,9 +130,7 @@ const NavBar = () => {
           {isOpen ? <RiCloseLine /> : <RiMenuLine />}
         </button>
       </div>
-
-      {/* Mobile Dropdown Menu */}
-      {/* Mobile Dropdown Menu */}
+      {/* Mobile Dropdown Menu */}=
       <div
         className={`fixed inset-0 bg-white z-50 transition-transform duration-300 ease-in-out md:hidden ${
           isOpen ? "translate-y-0" : "-translate-y-full"
@@ -142,7 +138,7 @@ const NavBar = () => {
       >
         <div className="p-8 pt-20 flex flex-col gap-10">
           {/* Nav Links */}
-          <ul className="flex flex-col gap-6 text-center text-xl font-semibold text-gray-700">
+          <ul className="flex flex-col gap-6 text-center text-xl font-semibold text-black">
             {navItems.map((item) => (
               <li key={item.name}>
                 <Link
