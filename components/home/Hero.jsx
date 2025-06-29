@@ -58,7 +58,7 @@ const Hero = () => {
             className="text-4xl md:text-5xl font-bold leading-tight mb-4 text-white"
             variants={itemVariants}
           >
-            Trusted Help for Spotless Spaces & Fresh Laundry for Hire
+            Trusted Cleaning & Laundry Services for Hire
           </motion.h1>
           <motion.p className="text-lg text-white mb-6" variants={itemVariants}>
             Serving Airbnb Hosts, Hotels, Offices & Residentials with Quality

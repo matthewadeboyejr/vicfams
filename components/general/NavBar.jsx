@@ -130,7 +130,7 @@ const NavBar = () => {
           {isOpen ? <RiCloseLine /> : <RiMenuLine />}
         </button>
       </div>
-      {/* Mobile Dropdown Menu */}=
+      {/* Mobile Dropdown Menu */}
       <div
         className={`fixed inset-0 bg-white z-50 transition-transform duration-300 ease-in-out md:hidden ${
           isOpen ? "translate-y-0" : "-translate-y-full"
