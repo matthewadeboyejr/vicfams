@@ -73,7 +73,10 @@ const Testimonials = () => {
   const visibleReviews = reviews.slice(activeIndex * 3, activeIndex * 3 + 3);
 
   return (
-    <section className="bg-blue-50 py-20 px-4 md:px-12 rounded-4xl header-overlay">
+    <section
+      id="testimonials"
+      className="bg-blue-50 py-20 px-4 md:px-12 rounded-4xl header-overlay"
+    >
       {/* Section Title */}
       <div className="text-center mb-12">
         <h3 className="uppercase text-white font-semibold">Testimonials</h3>

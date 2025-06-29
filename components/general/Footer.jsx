@@ -13,7 +13,7 @@ export default function Footer() {
     {
       title: "Quick Links",
       links: [
-        { href: "/book", label: "Book a Cleaning" },
+        { href: "/contact-us", label: "Get a Quote" },
         { href: "/services", label: "Our Services" },
         { href: "/contact-us", label: "Contact Us" },
       ],
@@ -21,17 +21,17 @@ export default function Footer() {
     {
       title: "Resources",
       links: [
-        { href: "/faq", label: "FAQs" },
-        { href: "/blog", label: "Cleaning Tips" },
-        { href: "/reviews", label: "Customer Reviews" },
+        //{ href: "/faq", label: "FAQs" },
+        //{ href: "/blog", label: "Cleaning Tips" },
+        { href: "/#testimonials", label: "Customer Reviews" },
       ],
     },
     {
       title: "Company",
       links: [
         { href: "/about-us", label: "About Vicfams" },
-        { href: "/careers", label: "Join Our Team" },
-        { href: "/privacy-policy", label: "Privacy Policy" },
+        // { href: "/careers", label: "Join Our Team" },
+        //{ href: "/privacy-policy", label: "Privacy Policy" },
       ],
     },
   ];
@@ -60,7 +60,7 @@ export default function Footer() {
           </div>
 
           <div className="text-white space-y-2 text-sm">
-            <p>📍 Address: 14 Wheeler Close, Dartford, DA1 5UL</p>
+            <p>📍 Address: 2 Barnaby Court, Invicta Road. DA2 6AY</p>
             <p>🕒 Hours: Mon - Sat, 8:00 AM - 6:00 PM</p>
             <p>📞 Phone: +447487331247</p>
             <p>📩 Email: Enquiry@vicfams.com</p>

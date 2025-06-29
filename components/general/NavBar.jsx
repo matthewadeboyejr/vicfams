@@ -32,7 +32,7 @@ const contact = [
   },
   {
     means: "Address",
-    detail: "14 Wheeler Close, Dartford, DA1 5UL",
+    detail: "2 Barnaby Court, Invicta Road. DA2 6AY",
     icon: <TiLocationOutline />,
   },
 ];
