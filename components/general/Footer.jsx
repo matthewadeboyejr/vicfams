@@ -126,21 +126,35 @@ export default function Footer() {
       </div>
 
       {/* Bottom Logo + Note */}
-      <div className="flex items-center border-t border-white/10 pt-4 gap-4">
-        <Link href="/" className="w-24">
-          <Image
-            src="/logo.png"
-            alt="Vicfams Logo"
-            width={100}
-            height={100}
-            className="w-full h-auto"
-            priority
-          />
-        </Link>
-        <span className="text-[#F2F2F2]/80 text-xs">
-          © {new Date().getFullYear()} Vicfams Cleaning Services. All rights
-          reserved.
-        </span>
+      <div className="flex flex-col md:flex-row justify-between border-t border-white/10 pt-4 gap-4">
+        {/* Left Section */}
+        <div className="flex items-center gap-4">
+          <Link href="/" className="w-24">
+            <Image
+              src="/logo.png"
+              alt="Vicfams Logo"
+              width={100}
+              height={100}
+              className="w-full h-auto"
+              priority
+            />
+          </Link>
+          <span className="text-xs text-[#F2F2F2]/80">
+            © {new Date().getFullYear()} Vicfams Enterprise. All rights
+            reserved.
+          </span>
+        </div>
+
+        {/* Right Section */}
+        <div className="flex items-center gap-4">
+          <span className="text-xs text-[#F2F2F2]/80">Made with love ❤️</span>
+          <a
+            href="mailto:matthewconsult@gmail.com"
+            className="text-lg text-[#F2F2F2]/80 hover:underline animate-pulse"
+          >
+            Contact Developer
+          </a>
+        </div>
       </div>
     </footer>
   );

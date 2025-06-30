@@ -7,7 +7,7 @@ import { RiMenuLine, RiCloseLine } from "react-icons/ri";
 import { MdOutlineWifiCalling3 } from "react-icons/md";
 import { IoMailOpenOutline } from "react-icons/io5";
 import { TiLocationOutline } from "react-icons/ti";
-import { FaTwitter, FaFacebookF } from "react-icons/fa";
+import { FaTwitter, FaFacebookF, FaTiktok } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { GetQuote } from "./Btn";
 
@@ -38,9 +38,18 @@ const contact = [
 ];
 
 const socials = [
-  { link: "#", icon: <FaFacebookF /> },
-  { link: "#", icon: <AiFillInstagram /> },
-  { link: "#", icon: <FaTwitter /> },
+  {
+    link: "https://www.facebook.com/people/Vicfams-Cleaning-Services-and-Linen-suppy/61578026996002/",
+    icon: <FaFacebookF />,
+  },
+  {
+    link: "https://www.instagram.com/vicfams_cleaning_linen_supply",
+    icon: <AiFillInstagram />,
+  },
+  {
+    link: "https://www.tiktok.com/@vicfams.cleaningl?lang=en-GB",
+    icon: <FaTiktok />,
+  },
 ];
 
 const NavBar = () => {
